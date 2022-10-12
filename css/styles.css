@@ -1,0 +1,180 @@
+        /* БАЗОВЫЕ СТИЛИ + header + footer */
+
+:root {
+    --title: #212121;
+    --text: #757575;
+    --a-hover-focus--btn: #2196F3;
+    --btn-hover-focus: #188CE8;
+    --text-backgr-white: #FFFFFF;
+    --text-gray: rgba(255, 255, 255, 0.6);
+    --backgr-black: #2F303A;
+    --backgr-prior-service: #F5F5F5;
+    --backgr-team: #F5F4FA;
+    --black: #000000;
+}
+
+                /* ОБЩИЕ СТИЛИ */
+/* сброс дефолтных отступов и padding */
+h1, h2, h3,
+ul,
+p {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* body */
+body {
+    color: var(--text);
+    background-color: var(--text-backgr-white);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+
+/* глобальный border-box */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* класс для сокрытия элемента (блока) */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* conteiner c падингами - для секций */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* заголовки<h..> (.title), списки<li>(.item), link - ссылка<a>, img - уберем нижние просветы */
+img {
+    display: block;
+}
+
+.title {
+    color: var(--title);
+}
+
+.item {
+    list-style: none;
+}
+
+.link {
+    color: var(--title);
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--a-hover-focus--btn);
+}
+            /* ИНДИВИДУАЛЬНЫЕ СТИЛИ ЭЛЕМЕНТОВ */
+
+/* header */
+header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.logo {
+    color: var(--a-hover-focus--btn);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo span{
+    color: var(--black);
+}
+
+.header .logo {
+    margin-right: 93px;
+}
+
+.header-nav {
+    display: flex;
+    margin-right: 344px;
+}
+
+.header-nav .item + .item,
+.header-connect .item + .item {
+    margin-left: 50px;
+}
+
+.header-connect {
+    display: flex;
+}
+
+.link.current {
+    color: var(--a-hover-focus--btn);
+}
+
+.header-connect_color {
+    color: var(--text);
+}
+
+/* footer */
+.footer {
+    background-color: var(--backgr-black);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer span,
+.footer-list_map {
+    color: var(--text-backgr-white);
+}
+
+.footer-list_color {
+    color: var(--text-gray);
+}
+
+.footer .item + .item {
+    margin-top: 9px;
+}
+
+.footer-list {
+    font-style: normal;
+}

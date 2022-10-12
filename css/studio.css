@@ -1,0 +1,134 @@
+        /* Стили для <main> STUDIO */
+
+
+/* ОБЩИЕ   h2 для service и team*/
+.service .title,
+.team>.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* basic */
+.basic {
+    background-color: var(--backgr-black);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.basic .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basic .title {
+    width: 696px;
+    color: var(--text-backgr-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.basic_btn {
+    background-color: var(--a-hover-focus--btn);
+    color: var(--text-backgr-white);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px hwb(0 0% 100% / 0.15);
+    border: 0 solid transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+
+.basic_btn:hover,
+.basic_btn:focus {
+    background-color: var(--btn-hover-focus);
+}
+
+/* prioritie */
+.prioritie-list {
+    display: flex;
+}
+
+.prioritie-list .item {
+    width: 270px;
+}
+
+.prioritie-list .item + .item {
+    margin-left: 30px;
+}
+
+.prioritie-list .title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* service */
+.service {
+    padding-bottom: 94px;
+}
+
+.service .title {
+    margin-bottom: 50px;
+}
+
+.service-list {
+    display: flex;
+}
+
+.service-list .item + .item {
+    margin-left: 30px;
+}
+
+/* team */
+.team {
+    background-color: var(--backgr-team);
+    text-align: center;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    column-gap: 30px;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team-list .item {
+    width: 270px;
+    background-color: var(--text-backgr-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.team-list img {
+    margin-bottom: 30px;
+}
+
+.team-list .title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
