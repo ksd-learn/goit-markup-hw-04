@@ -1,99 +1,125 @@
-        /* БАЗОВЫЕ СТИЛИ + header + footer */
+/* БАЗОВЫЕ СТИЛИ + HEADER + FOOTER */
 
-:root {
-    --title: #212121;
-    --text: #757575;
-    --a-hover-focus--btn: #2196F3;
-    --btn-hover-focus: #188CE8;
-    --text-backgr-white: #FFFFFF;
-    --text-gray: rgba(255, 255, 255, 0.6);
-    --backgr-black: #2F303A;
-    --backgr-prior-service: #F5F5F5;
-    --backgr-team: #F5F4FA;
-    --black: #000000;
-}
+            /* ОБЩИЕ НАСТРОЙКИ */
+                /* цвет */
+        :root {
+            --title: #212121;
+            --text: #757575;
+            --a-hover-focus--btn: #2196F3;
+            --btn-hover-focus: #188CE8;
+            --text-backgr-white: #FFFFFF;
+            --text-gray: rgba(255, 255, 255, 0.6);
+            --backgr-black: #2F303A;
+            --backgr-prior-service: #F5F5F5;
+            --backgr-team: #F5F4FA;
+            --icon:#AFB1B8;
+            --icon-backgr: rgba(255, 255, 255, 0.1);
+            --black: #000000;
+            --border: #EEEEEE;
+        }
+        
+                /* глобальный border-box */
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+        
+                /* сброс дефолтных отступов и padding */
+        h1, h2, h3,
+        ul,
+        p {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
-                /* ОБЩИЕ СТИЛИ */
-/* сброс дефолтных отступов и padding */
-h1, h2, h3,
-ul,
-p {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+                /* заголовки */
+        h2 {
+            color: var(--title);
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.2;
+            text-align: center;
+        }
 
-/* body */
-body {
-    color: var(--text);
-    background-color: var(--text-backgr-white);
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
-}
+        h3 {
+            color: var(--title);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1;
+        }
 
-/* глобальный border-box */
-html {
-    box-sizing: border-box;
-}
+                /* класс для сокрытия элемента (блока) */
+        .visually-hidden {
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            margin: -1px;
+        }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
+                /* дефолтные свойства svg-иконок */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;
+        }
 
-/* класс для сокрытия элемента (блока) */
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+                /* текст в body */
+        body {
+            color: var(--text);
+            background-color: var(--text-backgr-white);
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            line-height: 1.8;
+            letter-spacing: 0.03em;
+        }
 
-/* conteiner c падингами - для секций */
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
+                /* стилизация: списки<li>(.item), ссылки<a>(.link), img - уберем нижние просветы */
+        img {
+            display: block;
+        }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+        .item {
+            list-style: none;
+        }
 
-/* заголовки<h..> (.title), списки<li>(.item), link - ссылка<a>, img - уберем нижние просветы */
-img {
-    display: block;
-}
+        .link {
+            color: var(--title);
+            text-decoration: none;
+        }
 
-.title {
-    color: var(--title);
-}
+        .link:hover,
+        .link:focus {
+            color: var(--a-hover-focus--btn);
+        }
 
-.item {
-    list-style: none;
-}
+                /* блочная разметка CONTAINER и SECTION */
+        .container {
+            width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 0 auto;
+        }
 
-.link {
-    color: var(--title);
-    text-decoration: none;
-}
+        .section {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 
-.link:hover,
-.link:focus {
-    color: var(--a-hover-focus--btn);
-}
-            /* ИНДИВИДУАЛЬНЫЕ СТИЛИ ЭЛЕМЕНТОВ */
 
 /* header */
 header {
@@ -130,11 +156,10 @@ header {
 
 .header-nav {
     display: flex;
-    margin-right: 344px;
+    margin-right: 318px;
 }
 
-.header-nav .item + .item,
-.header-connect .item + .item {
+.header-nav .item + .item {
     margin-left: 50px;
 }
 
@@ -146,15 +171,40 @@ header {
     color: var(--a-hover-focus--btn);
 }
 
+.header-connect .item+.item {
+    margin-left: 30px;
+}
+
 .header-connect_color {
+    display: flex;
+    align-items: center;
     color: var(--text);
+}
+
+.header-connect_color .icon {
+    margin-right: 10px;
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
 }
 
 /* footer */
 .footer {
+    height: 252px;
     background-color: var(--backgr-black);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
 }
 
 .footer .logo {
@@ -167,6 +217,10 @@ header {
     color: var(--text-backgr-white);
 }
 
+.footer-list {
+    line-height: 1.7;
+}
+
 .footer-list_color {
     color: var(--text-gray);
 }
@@ -177,4 +231,47 @@ header {
 
 .footer-list {
     font-style: normal;
+}
+
+.footer-connect {
+    width: 231px;
+    margin-right: 70px;
+    
+}
+
+.footer-join {
+    padding-top: 15px;
+}
+
+.footer-join__title {
+    color: var(--text-backgr-white);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.networks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.networks__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border-radius: 50% 50%;
+    border: 0 solid transparent;
+    cursor: pointer;
+}
+
+.footer-join_hover {
+    color: var(--text-backgr-white);
+    background-color: var(--icon-backgr);
+}
+
+.footer-join_hover:hover {
+    background-color: var(--a-hover-focus--btn);
 }

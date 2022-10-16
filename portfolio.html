@@ -29,8 +29,22 @@
                 </ul>
             </nav>
             <ul class="header-connect">
-                <li class="item"><a href="mailto:info@devstudio.com" class="header-connect_color link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="header-connect_color link">+38 096 111 11 11</a></li>
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="header-connect_color link">
+                        <svg class="icon icon-envelope">
+                            <use href="./images/sprite-icon.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="header-connect_color link">
+                        <svg class="icon icon-smartphone">
+                            <use href="./images/sprite-icon.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -38,7 +52,7 @@
     <main>
         <section class="portfolio  section">
             <div class="container">
-                <h1 class="title visually-hidden">Портфоліо</h1>
+                <h1 class="visually-hidden">Портфоліо</h1>
                 <ul class="portfolio-filter">
                     <li class="item">
                         <button class="portfolio-filter__btn portfolio-filter_pudding" type="button">Усі</button>
@@ -147,18 +161,47 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" class="logo">Web<span>Studio</span></a>
-            <address>
-                <ul class="footer-list">
-                    <li class="item">
-                        <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer-list_map link" target="_blank"
-                            rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+            <h2 class="visually-hidden">Footer</h2>
+            <div class="footer-connect">
+                <a href="./index.html" class="logo">Web<span>Studio</span></a>
+                <address>
+                    <ul class="footer-list">
+                        <li class="item">
+                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer-list_map link" target="_blank"
+                                rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="item"><a href="mailto:info@devstudio.com"
+                                class="footer-list_color link">info@devstudio.com</a></li>
+                        <li class="item"><a href="tel:+380961111111" class="footer-list_color link">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-join">
+                <h3 class="footer-join__title">приєднуйтесь</h3>
+                <ul class="networks">
+                    <li class="networks__icon footer-join_hover">
+                        <svg class="icon ">
+                            <use href="./images/sprite-icon.svg#instagram"></use>
+                        </svg>
                     </li>
-                    <li class="item"><a href="mailto:info@devstudio.com" class="footer-list_color link">info@devstudio.com</a>
+                    <li class="networks__icon footer-join_hover">
+                        <svg class="icon">
+                            <use href="./images/sprite-icon.svg#twitter"></use>
+                        </svg>
                     </li>
-                    <li class="item"><a href="tel:+380961111111" class="footer-list_color link">+38 096 111 11 11</a></li>
+                    <li class="networks__icon footer-join_hover">
+                        <svg class="icon">
+                            <use href="./images/sprite-icon.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="networks__icon footer-join_hover">
+                        <svg class="icon">
+                            <use href="./images/sprite-icon.svg#linkedin"></use>
+                        </svg>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>

@@ -1,21 +1,20 @@
-        /* Стили для <main> STUDIO */
-
-
-/* ОБЩИЕ   h2 для service и team*/
-.service .title,
-.team>.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-}
+/* Стили для <main> STUDIO */
 
 /* basic */
 .basic {
-    background-color: var(--backgr-black);
+    max-width: 1600px;
+    height: 600px;
+    background-color: rgb(47, 48, 58);
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/studio/basic.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .basic .container {
@@ -24,7 +23,7 @@
     align-items: center;
 }
 
-.basic .title {
+.basic__title {
     width: 696px;
     color: var(--text-backgr-white);
     font-weight: 900;
@@ -35,7 +34,7 @@
     margin-bottom: 30px;
 }
 
-.basic_btn {
+.basic__btn {
     background-color: var(--a-hover-focus--btn);
     color: var(--text-backgr-white);
     font-family: inherit;
@@ -50,8 +49,8 @@
     cursor: pointer;
 }
 
-.basic_btn:hover,
-.basic_btn:focus {
+.basic__btn:hover,
+.basic__btn:focus {
     background-color: var(--btn-hover-focus);
 }
 
@@ -68,10 +67,21 @@
     margin-left: 30px;
 }
 
+.prioritie-list__icon {
+    width: 270px;
+    height: 120px;
+    text-align: center;
+    background-color: var(--backgr-team);
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+
+.prioritie-list__icon .icon {
+    width: 70px;
+    height: 70px;
+}
+
 .prioritie-list .title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.1;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -81,7 +91,7 @@
     padding-bottom: 94px;
 }
 
-.service .title {
+.service__title {
     margin-bottom: 50px;
 }
 
@@ -99,17 +109,17 @@
     text-align: center;
 }
 
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+.team__title {
     margin-bottom: 50px;
 }
 
 .team-list {
     display: flex;
     column-gap: 30px;
+}
+
+.team-list,
+.team-list .title {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -131,4 +141,51 @@
 .team-list .title {
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+.team-list .networks {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 16px;
+}
+
+.team-list_hover {
+    color: var(--icon);
+}
+
+.team-list_hover:hover {
+    color: var(--text-backgr-white);
+    background-color: var(--a-hover-focus--btn);
+}
+
+/* clients */
+.clients__title {
+    margin-bottom: 50px;
+}
+
+.clients-card {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-card .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: var(--icon);
+    border: 1px solid var(--icon);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clients-card .icon {
+    width: 106px;
+    height: 60px;
+}
+
+.clients-card .item:hover {
+    color: var(--a-hover-focus--btn);
+    border-color: var(--a-hover-focus--btn);
 }
