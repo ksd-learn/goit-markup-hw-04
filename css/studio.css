@@ -153,7 +153,8 @@
     color: var(--icon);
 }
 
-.team-list_hover:hover {
+.team-list_hover:hover,
+.team-list_hover:focus {
     color: var(--text-backgr-white);
     background-color: var(--a-hover-focus--btn);
 }
@@ -185,7 +186,8 @@
     height: 60px;
 }
 
-.clients-card .item:hover {
+.clients-card .item:hover,
+.clients-card .item:focus {
     color: var(--a-hover-focus--btn);
     border-color: var(--a-hover-focus--btn);
 }

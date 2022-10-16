@@ -205,6 +205,7 @@ header {
 
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer .logo {
@@ -239,9 +240,9 @@ header {
     
 }
 
-.footer-join {
+/* .footer-join {
     padding-top: 15px;
-}
+} */
 
 .footer-join__title {
     color: var(--text-backgr-white);
@@ -267,11 +268,17 @@ header {
     cursor: pointer;
 }
 
+.networks__icon .icon {
+    width: 20px;
+    height: 20px;
+}
+
 .footer-join_hover {
     color: var(--text-backgr-white);
     background-color: var(--icon-backgr);
 }
 
-.footer-join_hover:hover {
+.footer-join_hover:hover,
+.footer-join_hover:focus {
     background-color: var(--a-hover-focus--btn);
 }
