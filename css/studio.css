@@ -126,7 +126,7 @@
     text-align: center;
 }
 
-.team-list .item {
+.team-list > .item {
     width: 270px;
     background-color: var(--text-backgr-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -169,7 +169,7 @@
     gap: 30px;
 }
 
-.clients-card .item {
+.clients-card_style {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,7 +178,6 @@
     color: var(--icon);
     border: 1px solid var(--icon);
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .clients-card .icon {
@@ -186,8 +185,8 @@
     height: 60px;
 }
 
-.clients-card .item:hover,
-.clients-card .item:focus {
+.clients-card_style:hover,
+.clients-card_style:focus {
     color: var(--a-hover-focus--btn);
     border-color: var(--a-hover-focus--btn);
 }

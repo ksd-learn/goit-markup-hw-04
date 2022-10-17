@@ -226,7 +226,7 @@ header {
     color: var(--text-gray);
 }
 
-.footer .item + .item {
+.footer-list .item + .item {
     margin-top: 9px;
 }
 
@@ -262,10 +262,9 @@ header {
     height: 44px;
     align-items: center;
     justify-content: center;
-    list-style: none;
+    line-height: 0;
     border-radius: 50% 50%;
     border: 0 solid transparent;
-    cursor: pointer;
 }
 
 .networks__icon .icon {
@@ -280,5 +279,6 @@ header {
 
 .footer-join_hover:hover,
 .footer-join_hover:focus {
+    color: var(--text-backgr-white);
     background-color: var(--a-hover-focus--btn);
 }
