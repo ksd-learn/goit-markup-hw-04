@@ -244,8 +244,13 @@ header {
     padding-top: 15px;
 } */
 
+
+
 .footer-join__title {
     color: var(--text-backgr-white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
